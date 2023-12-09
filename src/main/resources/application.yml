@@ -1,0 +1,17 @@
+server:
+  servlet:
+    context-path: "/basic-api"
+  port: 8181
+
+spring:
+  jpa:
+    database: postgresql
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/basic-api
+    username: postgres
+    password: 180200
+    driver-class-name: org.postgresql.Driver
